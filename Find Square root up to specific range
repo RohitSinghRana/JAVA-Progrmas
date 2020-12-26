@@ -1,0 +1,22 @@
+import java.math.BigDecimal;
+import java.math.MathContext;
+
+public class BigDecimal1 {
+	public static void main(String[] args) {
+		//create object of BigDecimal with value 2.0
+		int a=2;
+		BigDecimal b1 = new BigDecimal(a);
+    
+//		MathContext is a class in JAVA which help we can store and set the 
+//		presicion(place after decimal)
+		MathContext mc = new MathContext(30); // 30 places after decimal
+     
+// call sqrt() method of BigDecimal and pass object 'mc' in this
+		b1=b1.sqrt(mc);
+		
+		System.out.println(b1);
+		
+	}
+}
+
+
